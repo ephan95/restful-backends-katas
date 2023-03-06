@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+html {
+  --button: rgb(80, 80, 248);
+  --header: rgb(227, 248, 255);
+  --quotetext: rgb(53, 53, 53);
+  --quoteauthor: rgb(92, 92, 92);
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 10%;
+  background-color: var(--header);
+}
+
+button {
+  background-color: var(--button);
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-container {
+  margin: 5em 0 0 0;
+  padding-inline: 3em 5em;
+  position: relative;
+}
+
+q {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--quotetext);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 20em;
+}
