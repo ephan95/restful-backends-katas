@@ -1,0 +1,60 @@
+:root {
+  --color: #000000;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color);
+  margin: 0;
+}
+
+header {
+  background-color: rgb(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.2em;
+  align-items: center;
+}
+
+.sliders {
+  display: flex;
+  gap: 3em;
+}
+
+input#red {
+  accent-color: red;
+  cursor: pointer;
+}
+
+input#green {
+  accent-color: green;
+  cursor: pointer;
+}
+
+input#blue {
+  accent-color: blue;
+  cursor: pointer;
+}
+
+#colorvalue {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+button {
+  font: inherit;
+  font-weight: bold;
+  outline: black 2px solid;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+button:hover {
+  outline: rgb(68, 68, 68) 3px solid;
+}
